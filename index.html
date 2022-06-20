@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon"/> or type="image/vnd.microsoft.icon" -->
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" type="text/css" >
+    <title>Les petits plats</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        
+        <header role="header">
+            <a href="http://127.0.0.1:5500/">
+                <img src="assets/icons/chapeau.svg" alt="icone toque de cuisinier" />
+                <h1>Les petits plats</h1>
+            </a>
+        </header>
+
+        <main class="container">
+            <section class="search">
+                <input id="mainSearch" type="search" placeholder="Rechercher une recette" /> <!--  -->
+                <span class="search"><i class="fas fa-search" alt="icone loupe"></i></span>
+            </section>
+
+            <section class="sectionTags">
+                <!--<button class="btnTag colorIngredient">Noix
+                        <img src="assets/icons/croix.svg" alt="" />
+                     </button> -->
+            </section>
+
+            <section class="sectionFiltres">
+                <div id="ingredientFilter" class="btnFilter colorIngredient">
+                    <img src="assets/icons/chevron_bas.svg" class="openDropdown" alt="" />
+                    <input id="searchIngredient" type="button" value="Ingr&eacute;dients"
+                        class="inputFilter colorIngredient openDropdown" /> <!--colorIngredient-->
+                    <ul id="ingredientList" class="disappear">
+                        <!--<li class="itemIngredient">Beurre</li>-->
+                    </ul>
+                </div>
+                <div id="appareilFilter" class="btnFilter colorAppareil">
+                    <img src="assets/icons/chevron_bas.svg" class="openDropdown" alt="" />
+                    <input id="searchAppareil" type="button" value="Appareils"
+                        class="inputFilter colorAppareil openDropdown" /> <!--colorAppareil-->
+                    <ul id="appareilList" class="disappear">
+                        <!--<li class="itemIngredient">Beurre</li>-->
+                    </ul>
+                </div>
+                <div id="ustensilFilter" class="btnFilter colorUstensil">
+                    <img src="assets/icons/chevron_bas.svg" class="openDropdown" alt="" />
+                    <input id="searchUstensil" type="button" value="Ustensiles"
+                        class="inputFilter colorUstensil openDropdown" /> <!--colorUstensil-->
+                    <ul id="ustensilList" class="disappear">
+                        <!--<li class="itemIngredient">Beurre</li>-->
+                    </ul>
+                </div>
+            </section>
+
+            <section class="sectionRecettes">
+                <!-- <article>
+                    <div class="imgRecette"></div>
+                    <div class="legende">
+                        <div class="titre">
+                            <h2>Limonade de Noix</h2>
+                            <span><img src="assets/icons/clock.svg" alt="" />10 min</span>
+                        </div>
+                        <div class="description">
+                            <ul>
+                                <li><span>Jus citron:</span> 2</li>
+                                <li><span>Crème citron citronée citron:</span> 20g</li>
+                                <li><span>Sucre:</span> 20g</li>
+                                <li><span>Glacon:</span> 5</li>
+                            </ul>
+                            <p>Lore</p>
+                        </div>
+                    </div>
+                </article>-->
+            </section>
+
+        </main>
+
+    </div>
+    <script src="scripts/pages/index.js" type="module"></script>
+</body>
+
+</html>
